@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChuckJokesVue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Chuck Norris Jokes</h1>
+        <ul>
+            <li v-for="(chuck, index) in chucks" :key="index">
+                {{ chuck.value }}
+            </li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
